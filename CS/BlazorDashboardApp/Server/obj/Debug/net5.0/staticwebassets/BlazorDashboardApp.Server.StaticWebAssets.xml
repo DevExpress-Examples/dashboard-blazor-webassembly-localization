@@ -1,6 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="D:\work\examples\localization-blazor\dashboard-blazor-webassembly-app\CS\BlazorDashboardApp\Client\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="D:\work\examples\localization-blazor\dashboard-blazor-webassembly-app\CS\BlazorDashboardApp\Client\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="/" Path="D:\work\examples\localization-blazor\dashboard-blazor-webassembly-app\CS\BlazorDashboardApp\Client\wwwroot\" />
-  <ContentRoot BasePath="_content/DevExpress.Blazor.Dashboard" Path="C:\Program Files (x86)\DevExpress 21.2\Components\Offline Packages\devexpress.blazor.dashboard\21.2.3-pre-21293\build\..\staticwebassets\" />
-</StaticWebAssets>
