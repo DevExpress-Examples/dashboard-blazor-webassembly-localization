@@ -23,7 +23,7 @@ A custom [CultureSelector](./CS/BlazorDashboardApp/Client/Components/CultureSele
 * [CultureSelector.razor](./CS/BlazorDashboardApp/Client/Components/CultureSelector.razor)
 * [index.html](./CS/BlazorDashboardApp/Client/wwwroot/index.html#L18-L27)
 * [Program.cs](./CS/BlazorDashboardApp/Client/Program.cs)
-* [DashboardWasmLocalizationProvider.cs](./CS/BlazorDashboardApp/Client/DashboardWasmLocalizationProvider.cs#L18)
+* [DashboardWasmLocalizationProvider.cs](./CS/BlazorDashboardApp/Client/DashboardWasmLocalizationProvider.cs)
 <!-- default file list end -->
 
 ## Documentation
