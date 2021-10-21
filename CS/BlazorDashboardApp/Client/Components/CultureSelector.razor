@@ -1,0 +1,58 @@
+﻿@using System.Globalization
+@using System.Threading
+
+@inject NavigationManager Nav
+@inject IJSRuntime JSRuntime
+
+@namespace BlazorDashboardApp.Client
+Culture:
+<select @bind="Culture" style="display: inline-block; height: 30px; border-color: #ccc">
+    @foreach (var culture in supportedCultures) {
+        <option value="@culture">@culture.DisplayName</option>
+    }
+</select>
+UICulture:
+<select @bind="UICulture" style="display: inline-block; height: 30px; border-color: #ccc">
+    @foreach (var culture in supportedUICultures) {
+        <option value="@culture">@culture.DisplayName</option>
+    }
+</select>
+
+@code {
+    [Parameter] public string Height { get; set; }
+
+    CultureInfo[] supportedCultures = new[] {
+        new CultureInfo("en-US"),
+        new CultureInfo("de-DE"),
+    };
+    CultureInfo[] supportedUICultures = new[] {
+        new CultureInfo("en-US"),
+        new CultureInfo("de-DE"),
+    };
+
+    protected override void OnInitialized() {
+        Culture = Thread.CurrentThread.CurrentCulture;
+        UICulture = Thread.CurrentThread.CurrentUICulture;
+    }
+
+    CultureInfo Culture {
+        get => Thread.CurrentThread.CurrentCulture;
+        set {
+            if (Thread.CurrentThread.CurrentCulture != value)
+                ChangeCulture("blazorCulture.set", value);
+        }
+    }
+
+    CultureInfo UICulture {
+        get => Thread.CurrentThread.CurrentUICulture;
+        set {
+            if (Thread.CurrentThread.CurrentUICulture != value)
+                ChangeCulture("blazorUICulture.set", value);
+        }
+    }
+
+    void ChangeCulture(string clientMethod, CultureInfo culture) {
+        ((IJSInProcessRuntime)JSRuntime).InvokeVoid(clientMethod, culture.Name);
+        Nav.NavigateTo(Nav.Uri, forceLoad: true);
+    }
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Sample Dashboard" />
+  <DataSources>
+    <ObjectDataSource Name="Object Data Source" ComponentName="objectDataSource1" DataId="employees" />
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="objectDataSource1">
+      <DataItems>
+        <Dimension DataMember="Name" DefaultId="DataItem0" />
+        <Dimension DataMember="HireDate" DateTimeGroupInterval="None" DefaultId="DataItem1" />
+        <Measure DataMember="Salary" DefaultId="DataItem3">
+          <NumericFormat FormatType="General" Unit="Ones" />
+        </Measure>
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension DefaultId="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn>
+          <Dimension DefaultId="DataItem1" />
+        </GridDimensionColumn>
+        <GridMeasureColumn>
+          <Measure DefaultId="DataItem3" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
