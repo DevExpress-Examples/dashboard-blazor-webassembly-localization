@@ -9,7 +9,7 @@ The example shows how to localize the Dashboard component in Blazor WebAssembly 
 - Translate UI element captions to a different language: dialog boxes, buttons, menu items, error messages, and so on (localization).
 - Format numbers, dates, and currencies according to specific culture settings (globalization).
 
-The app uses **JSON strings** to localize the Dashboard component. 
+The app uses **JSON strings** to localize the Dashboard component. You can obtain these strings from our [Localization Service](https://docs.devexpress.com/LocalizationService/16235/localization-service).
 
 A custom [CultureSelector](./CS/BlazorDashboardApp/Client/Components/CultureSelector.razor) UI component is implemented to allow users to change the culture at runtime. The app saves the current culture in [local storage](https://www.w3schools.com/html/html5_webstorage.asp) within the user's browser.
 
