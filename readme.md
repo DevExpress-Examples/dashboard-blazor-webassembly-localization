@@ -11,7 +11,7 @@ The example shows how to localize the Dashboard component in Blazor WebAssembly 
 
 The app uses **JSON strings** to localize the Dashboard component. 
 
-A custom [CultureSelector](./CS/BlazorDashboardApp/Client/Components/CultureSelector.razor) UI component is implemented to allow users to change the culture at runtime. The app saves the current culture in a cookie.
+A custom [CultureSelector](./CS/BlazorDashboardApp/Client/Components/CultureSelector.razor) UI component is implemented to allow users to change the culture at runtime. The app saves the current culture in [local storage](https://www.w3schools.com/html/html5_webstorage.asp) within the user's browser.
 
 ![blazor-localized-dashboard](img/blazor-localized-dashboard.png)
 
