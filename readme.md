@@ -31,6 +31,6 @@ A custom [CultureSelector](./CS/BlazorDashboardApp/Client/Components/CultureSele
 
 ## More Examples
 
-- [Get Started - Dashboard Component in Blazor Server Application](https://github.com/DevExpress-Examples/dashboard-blazor-server-app)
+- [Dashboard for Blazor Server - Localization](https://github.com/DevExpress-Examples/dashboard-blazor-server-localization)
 - [Dashboard Blazor WebAssembly App - Configuration](https://github.com/DevExpress-Examples/dashboard-blazor-webassembly-configuration)
 - [Dashboard Blazor WebAssembly App - JavaScript Customization](https://github.com/DevExpress-Examples/dashboard-blazor-webassembly-js-customization)
