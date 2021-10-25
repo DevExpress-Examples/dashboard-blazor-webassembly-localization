@@ -1526,5 +1526,11 @@
   "DashboardWebStringId.AccordionTab.VisibleDataFilter": "Visible Data Filter",
   "DashboardWebStringId.Binding.DataSource": "Datenquelle",
   "DashboardWebStringId.FormatRuleApplyToDimensionElement": "Dimension",
-  "DashboardWebStringId.FormatRuleApplyToTextElement": "Text"
+  "DashboardWebStringId.FormatRuleApplyToTextElement": "Text",
+  "DashboardStringId.LayoutDimensionModeAuto": "Auto",
+  "DashboardStringId.LayoutDimensionModeFixed": "Fest",
+  "DashboardWebStringId.DesignerToolbar.Width": "B:",
+  "DashboardWebStringId.DesignerToolbar.Height": "H:",
+  "DashboardWebStringId.DesignerToolbar.Pixels": "px",
+  "DashboardWebStringId.DesignerToolbar.LayoutDimensionValidationError": "Der Wert sollte zwischen {0} und {1} liegen"
 }

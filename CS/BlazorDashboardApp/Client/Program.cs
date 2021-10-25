@@ -15,17 +15,7 @@ namespace BlazorDashboardApp.Client {
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
-            builder.Services.AddSingleton<IDashboardLocalizationProvider>(sp => new DashboardWasmLocalizationProvider(sp, () => {
-                switch(CultureInfo.CurrentUICulture.TwoLetterISOLanguageName) {
-                    case "de":
-                        return new string[] {
-                            "./localization/de/dx-dashboard.de.json",
-                            "./localization/de/dx-analytics-core.de.json",
-                    };
-                    default:
-                        return new string[] { };
-                }
-            }));
+            builder.Services.AddSingleton<IDashboardLocalizationProvider>(sp => new DashboardWasmLocalizationProvider(sp));
 
             var host = builder.Build();
             var js = host.Services.GetRequiredService<IJSRuntime>();

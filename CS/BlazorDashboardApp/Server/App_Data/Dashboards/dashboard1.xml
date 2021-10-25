@@ -5,12 +5,12 @@
     <ObjectDataSource Name="Object Data Source" ComponentName="objectDataSource1" DataId="employees" />
   </DataSources>
   <Items>
-    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="objectDataSource1">
+    <Grid ComponentName="gridDashboardItem1" Name="Grid" DataSource="objectDataSource1">
       <DataItems>
         <Dimension DataMember="Name" DefaultId="DataItem0" />
         <Dimension DataMember="HireDate" DateTimeGroupInterval="None" DefaultId="DataItem1" />
         <Measure DataMember="Salary" DefaultId="DataItem3">
-          <NumericFormat FormatType="General" Unit="Ones" />
+          <NumericFormat FormatType="Currency" Unit="Ones" />
         </Measure>
       </DataItems>
       <GridColumns>
