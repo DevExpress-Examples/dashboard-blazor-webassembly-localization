@@ -1,5 +1,6 @@
 <!-- default badges list -->
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/419774191/21.2.2%2B)
+[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1039192)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Dashboard for Blazor WebAssembly - Localization
@@ -9,7 +10,7 @@ The example shows how to localize the Dashboard component in Blazor WebAssembly 
 - Translate UI element captions to a different language: dialog boxes, buttons, menu items, error messages, and so on (localization).
 - Format numbers, dates, and currencies according to specific culture settings (globalization).
 
-The app uses **JSON strings** to localize the Dashboard component. 
+The app uses **JSON strings** to localize the Dashboard component. You can obtain these strings from our [Localization Service](https://docs.devexpress.com/LocalizationService/16235/localization-service).
 
 A custom [CultureSelector](./CS/BlazorDashboardApp/Client/Components/CultureSelector.razor) UI component is implemented to allow users to change the culture at runtime. The app saves the current culture in [local storage](https://www.w3schools.com/html/html5_webstorage.asp) within the user's browser.
 
