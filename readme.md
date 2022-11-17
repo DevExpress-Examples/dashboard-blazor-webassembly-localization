@@ -18,8 +18,7 @@ The [ResourceManager.setLocalizationMessages](https://docs.devexpress.com/Dashbo
 
 ![blazor-localized-dashboard](img/blazor-localized-dashboard.png)
 
-## Files to Look At
-
+## Files to Review
 * [Dashboard.razor](./CS/BlazorDashboardApp/BlazorDashboardApp.Client/Pages/Dashboard.razor)
 * [CultureSelector.razor](./CS/BlazorDashboardApp/BlazorDashboardApp.Client/Components/CultureSelector.razor)
 * [index.html](./CS/BlazorDashboardApp/BlazorDashboardApp.Client/wwwroot/index.html#L18-L27)
