@@ -28,7 +28,7 @@ The [ResourceManager.setLocalizationMessages](https://docs.devexpress.com/Dashbo
 
 ## Documentation
 
-- [Create a Blazor WebAssembly Dashboard Application](https://docs.devexpress.com/Dashboard/401892?v=21.1)
+- [Create a Blazor WebAssembly Dashboard Application](https://docs.devexpress.com/Dashboard/401892)
 
 ## More Examples
 
@@ -42,3 +42,4 @@ The [ResourceManager.setLocalizationMessages](https://docs.devexpress.com/Dashbo
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
